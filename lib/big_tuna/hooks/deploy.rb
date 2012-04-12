@@ -16,7 +16,7 @@ module BigTuna
     end
 
     def deploy_command
-      "bundle exec knife ssh 'role:app_server' -x ubuntu -a ec2.public_hostname 'sudo chef-client'"
+      "bundle exec knife ssh 'chef_environment:qa AND role:app_server' -x ubuntu -a ec2.public_hostname 'sudo chef-client'"
     end
 
   end
