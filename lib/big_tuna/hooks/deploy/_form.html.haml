@@ -1,0 +1,5 @@
+%div
+  = label_tag("deploy_key_path")
+  = text_field_tag("configuration[deploy_key_path]", @hook.configuration["deploy_key_path"])
+  = label_tag("chef_repo_path")
+  = text_field_tag("configuration[chef_repo_path]", @hook.configuration["chef_repo_path"])
