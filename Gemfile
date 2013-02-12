@@ -30,7 +30,7 @@ group :development, :test do
   gem "faker"
   gem "machinist"
   gem "nokogiri"
-  gem "mocha"
+  gem "mocha", :require => false
   gem "database_cleaner"
   gem "crack"
 
